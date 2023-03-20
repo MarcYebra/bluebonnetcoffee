@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BluebonnetCoffee</title>
+  <title>Bluebonnet Coffee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag asset_path('coffee-icon.png') %>
 </head>
 <body>
   
+  <div class="top-banner text-white">
+    ORDERS $50+ SHIP FREE | SHOP NOW 
+  </div>
   <nav class="top-bar">
-    <h1><a href="/">BluebonnetCoffee</a></h1>
+    <h3><a href="/">Bluebonnet <br>Coffee</a></h3>
 
     <section class="top-bar-section">
-      <ul class="right">
+      <ul class="flex-1">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">COFFEE</a></li>
+        <li><a href="#">MERCH</a></li>
+        <li><a href="#">LOCATIONS</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <ul class="home-account">
         <%- if current_user -%>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
-          <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-          <li><%= link_to 'Sign In', new_user_session_path %></li>
+        <li><%= link_to 'Account', new_user_session_path%>
         <%- end -%>
       </ul>
     </section>
@@ -28,6 +41,12 @@
       <%= value %>
     </div>
   <%- end -%>
+
+  <section class="top-banner-section">
+  <h1>COFFEE BREWED BY TEXANS</h1>
+  <div class="button">Our Story</div>
+
+</section>
 
   <%= yield %>
 

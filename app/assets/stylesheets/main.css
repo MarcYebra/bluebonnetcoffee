@@ -1,0 +1,137 @@
+/* HOME PAGE */
+.top-bar {
+  margin-left: 55px;
+  margin-right: 55px;
+  background-color: transparent;
+}
+
+.top-bar ul {
+  background-color: transparent;
+}
+.top-banner {
+  text-align: center;
+  background-color: #523964;
+  padding: 0.625em;
+}
+.flex-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex-1 li {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.flex-1 li a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  position: relative;
+}
+
+.flex-1 li a::after {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #523964;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -100%;
+  transition: 0.4s;
+}
+
+.flex-1 li a:hover::after {
+  width: 100%;
+}
+
+.home-account {
+  list-style: none;
+  text-decoration: none;
+}
+
+.home-account a {
+  color: black;
+}
+
+.top-banner-section {
+  text-align: center;
+  background-color: transparent;
+}
+
+
+
+/* HOME - COFFEE */
+.coffee-banner-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #32225A;
+}
+
+.text-white {
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.home-coffee-banner-title {
+  font-size: 2.8125em;
+}
+
+.home-coffee-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-coffee-list li {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* HOME - MENU */
+.menu-banner-section {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: rgb(174, 174, 174);
+}
+
+.home-menu-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-our-menu {
+  margin: auto;
+}
+
+.home-menu {
+  height: 50px;
+  width: 100px;
+  margin: auto;
+  background-color: black;
+}
+
+/* HOME - SHOP */
+.shop-banner-section {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: #32225A;
+}
+
+/* HOME - LOCATION */
+.location-banner-section {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: rgb(226, 226, 226);
+}
