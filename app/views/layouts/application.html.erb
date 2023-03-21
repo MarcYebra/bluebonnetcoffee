@@ -8,8 +8,7 @@
   <%= favicon_link_tag asset_path('coffee-icon.png') %>
 </head>
 <body>
-  
-  <div class="top-banner text-white font-prohibition">
+  <div class="top-banner text-white">
     ORDERS $50+ SHIP FREE | SHOP NOW 
   </div>
 
@@ -17,11 +16,11 @@
 <div class="top-bar-flex">
 
   <div class="home-logo">
-    <h3 class="font-prohibition"><a href="/">Bluebonnet Coffee</a></h3>
+    <div><a href="/">Bluebonnet Coffee</a></div>
   </div>
 
     <div class="home-nav">
-      <ul class="flex-1 font-prohibition">
+      <ul class="flex-1">
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">COFFEE</a></li>
         <li><a href="#">MERCH</a></li>
@@ -30,19 +29,15 @@
       </ul>
     </div>
 
-
-      <ul class="home-account font-prohibition">
+      <ul class="home-account">
         <%- if current_user -%>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
         <li><%= link_to 'Account', new_user_session_path%>
         <%- end -%>
       </ul>
-
-      </div>
-      </div>
-
-
+    </div>
+    </div>
 
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">
@@ -50,11 +45,12 @@
     </div>
   <%- end -%>
 
-  <section class="top-banner-section">
-  <h1 class="font-prohibition">COFFEE BREWED BY TEXANS</h1>
+  <div class="top-banner-section">
+  <div class="top-image-text text-white">COFFEE BREWED <br>BY TEXANS</div>
   <div class="button">Our Story</div>
+  </div>
 
-</section>
+
 
   <%= yield %>
 
