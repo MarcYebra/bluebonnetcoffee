@@ -9,32 +9,40 @@
 </head>
 <body>
   
-  <div class="top-banner text-white">
+  <div class="top-banner text-white font-prohibition">
     ORDERS $50+ SHIP FREE | SHOP NOW 
   </div>
-  <nav class="top-bar">
-    <h3><a href="/">Bluebonnet <br>Coffee</a></h3>
 
-    <section class="top-bar-section">
-      <ul class="flex-1">
+<div class="top-bar-container">
+<div class="top-bar-flex">
+
+  <div class="home-logo">
+    <h3 class="font-prohibition"><a href="/">Bluebonnet Coffee</a></h3>
+  </div>
+
+    <div class="home-nav">
+      <ul class="flex-1 font-prohibition">
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">COFFEE</a></li>
         <li><a href="#">MERCH</a></li>
         <li><a href="#">LOCATIONS</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <ul class="home-account">
+
+      <ul class="home-account font-prohibition">
         <%- if current_user -%>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
         <li><%= link_to 'Account', new_user_session_path%>
         <%- end -%>
       </ul>
-    </section>
-  </nav>
+
+      </div>
+      </div>
+
+
 
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">
@@ -43,7 +51,7 @@
   <%- end -%>
 
   <section class="top-banner-section">
-  <h1>COFFEE BREWED BY TEXANS</h1>
+  <h1 class="font-prohibition">COFFEE BREWED BY TEXANS</h1>
   <div class="button">Our Story</div>
 
 </section>
