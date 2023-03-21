@@ -1,10 +1,35 @@
 @import url("https://use.typekit.net/eyv8jxk.css");
 
 /* HOME PAGE */
-.top-bar-container {
-  margin-left: 55px;
-  margin-right: 55px;
+body {
+  margin: 0;
+  font-family: "prohibition", sans-serif;
 }
+
+.top-banner {
+  text-align: center;
+  background-color: #523964;
+  padding: 0.625em;
+}
+
+.top-bar ul {
+  background-color: transparent;
+}
+
+.text-white {
+  color: rgb(255, 255, 255);
+}
+
+.top-bar-container {
+  padding: 0 1em;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.top-bar-container:hover {
+  background-color: #99b3d4;
+}
+
 .top-bar-flex{
   display: flex;
   align-items: center;
@@ -12,13 +37,15 @@
   background-color: transparent;
 }
 
-.top-bar ul {
-  background-color: transparent;
+.home-nav {
+  font-size: 20px;
+  font-weight: 635;
 }
-.top-banner {
-  text-align: center;
-  background-color: #523964;
-  padding: 0.625em;
+
+.home-nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-1 {
@@ -59,6 +86,7 @@
 .home-account {
   list-style: none;
   text-decoration: none;
+  margin: auto;
 }
 
 .home-account a {
@@ -66,35 +94,30 @@
 }
 
 .top-banner-section {
+  background-image: url("home-texans.jpg");
+  background-size: cover;
+  padding-top: 115px;
+  padding-bottom: 200px;
   text-align: center;
-  background-color: transparent;
 }
 
-.font-prohibition {
-  font-family: "prohibition", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.top-image-text {
+  font-size: 100px;
+  text-align: center;
 }
 
-.home-nav div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button {
+  background-color: #385C8B;
+  font-size: 1.350em;
+  padding: .85em 2em;
+  margin-top: 1rem;
 }
-
-
-
-
 
 /* HOME - COFFEE */
 .coffee-banner-section {
-  padding-top: 100px;
+  padding-top: 10px;
   padding-bottom: 100px;
-  background-color: #32225A;
-}
-
-.text-white {
-  color: white;
+  background-color: #385C8B;
 }
 
 .center {
@@ -102,21 +125,36 @@
 }
 
 .home-coffee-banner-title {
-  font-size: 2.8125em;
+  font-size: 90px;
+}
+
+.home-coffee-subtitle {
+  padding-top: 10px;
 }
 
 .home-coffee-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 0;
-  padding: 0;
   list-style: none;
+  padding-top: 25px;
 }
 
 .home-coffee-list li {
   flex-grow: 1;
   flex-shrink: 1;
+}
+
+.home-coffee-list img {
+  height: 220px;
+  width: auto;
+}
+
+.home-our-coffees-button {
+  border: 1px solid white;
+  color: white;
+  padding: 0.85em 2em;
+  display: inline-block;
 }
 
 /* HOME - MENU */
