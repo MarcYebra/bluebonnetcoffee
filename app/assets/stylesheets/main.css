@@ -117,7 +117,7 @@ body {
 .coffee-banner-section {
   padding-top: 10px;
   padding-bottom: 100px;
-  background-color: #385C8B;
+  background-color: #0F314B;
 }
 
 .center {
@@ -161,35 +161,53 @@ body {
 .menu-banner-section {
   padding-top: 55px;
   padding-bottom: 55px;
-  background-color: rgb(174, 174, 174);
+  background-color: rgb(255, 255, 255);
 }
 
-.home-menu-inline {
-  display: flex;
-  justify-content: space-between;
+.menu-banner-section p {
+  text-align: center;
+}
+
+.menu-banner-section img {
+  height: 400px;
+  width: auto;
 }
 
 .view-our-menu {
-  margin: auto;
+  font-size: 90px;
+  text-align: center;
 }
 
-.home-menu {
-  height: 50px;
-  width: 100px;
-  margin: auto;
-  background-color: black;
+.menu-text {
+  display: block;
+  text-align: center;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.see-menu-button {
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding: 0.85em 2em;
+  display: inline-block;
+  text-align: center;
+
 }
 
 /* HOME - SHOP */
 .shop-banner-section {
   padding-top: 55px;
   padding-bottom: 55px;
-  background-color: #32225A;
+  background-color: #0F314B;
 }
 
 /* HOME - LOCATION */
 .location-banner-section {
   padding-top: 55px;
   padding-bottom: 55px;
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(255, 255, 255)
 }
