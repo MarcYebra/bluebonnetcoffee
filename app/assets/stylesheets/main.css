@@ -1,5 +1,14 @@
 @import url("https://use.typekit.net/eyv8jxk.css");
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
 /* HOME PAGE */
 body {
   margin: 0;
@@ -262,3 +271,55 @@ body {
   text-align: center;
   color: rgb(0, 0, 0);
 }
+
+/* FOOTER */
+#footer {
+  background-color: #0F314B;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-container {
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.footer-column-1-list li {
+  list-style: none;
+  padding-bottom: 0.85rem;
+}
+
+.footer-column-2-list li {
+  list-style: none;
+  padding-bottom: 0.85rem;
+}
+
+.footer-logo {
+  font-size: 44px;
+}
+
+.footer-newsletter-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-newsletter-flex p {
+  padding-top: 0.55rem;
+}
+
+.footer-newsletter {
+  font-weight: 500;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.font-size-24px {
+  font-size: 24px;
+}
+

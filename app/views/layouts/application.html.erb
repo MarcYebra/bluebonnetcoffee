@@ -16,7 +16,7 @@
 <div class="top-bar-flex">
 
   <div class="home-logo">
-    <div><a href="/">Bluebonnet Coffee</a></div>
+    <div><a href="/">Bluebonnet <br>Coffee</a></div>
   </div>
 
     <div class="home-nav">
@@ -62,7 +62,33 @@
     <%- end -%>
   <%- end -%>
   <%= javascript_pack_tag 'application' %>
-  
-  <%= yield :extra_footer %>
+
+  <footer id="footer">
+    <div class="footer-container text-white">
+      <div class="footer-flex">
+        <div class="footer-logo">Bluebonnet <br> Coffee</div>
+            <ul class="footer-column-1-list font-size-24px">
+              <li>HOME</li>
+              <li>OUR STORY</li>
+              <li>STORE</li>
+              <li>LOCATIONS</li>
+            </ul>
+
+            <ul class="footer-column-2-list font-size-24px">
+              <li>ACCOUNT</li>
+              <li>CONTACT</li>
+              <li>FAQ'S</li>
+            </ul>
+
+          <div class="footer-newsletter-flex">
+            <div class="footer-newsletter font-size-24px">Sign up for our newsletter</div>
+              <p>Sign up for our email list to get access to <br>
+              exclusive promotions, product launches and <br>
+              news from Bluebonnet Coffee
+              </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
