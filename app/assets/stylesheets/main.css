@@ -15,10 +15,8 @@ body {
   font-family: "prohibition", sans-serif;
 }
 
-.top-banner-background-gradient {
-  background: linear-gradient( to right, red, rgba(255, 0, 0, 0.879), rgba(255, 0, 0, 0.634), rgba(255, 0, 0, 0.543), rgba(255, 0, 0, 0.454), rgba(255, 0, 0, 0.301), rgba(255, 0, 0, 0.204), rgba(0, 0, 255, 0.194), rgba(0, 0, 255, 0.33), rgba(0, 0, 255, 0.448), rgba(0, 0, 255, 0.58), rgba(0, 0, 255, 0.75), rgba(0, 0, 255, 0.892), blue);
-}
 .top-banner {
+  background-color: rgb(193, 157, 103);
   text-align: center;
   padding: 0.625em;
 }
@@ -78,7 +76,7 @@ body {
   content: "";
   width: 0;
   height: 5px;
-  background-color: rgb(83, 102, 172);
+  background-color: red;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -278,6 +276,14 @@ body {
   padding-bottom: 100px;
 }
 
+#footer a {
+  color: rgb(255, 255, 255);
+}
+
+#footer a:hover {
+  color: red;
+}
+
 .footer-container {
   margin-left: 55px;
   margin-right: 55px;
@@ -321,4 +327,23 @@ body {
 .font-size-24px {
   font-size: 24px;
 }
+
+/* ABOUT PAGE */
+.font-prohibition h2 {
+  font-family: "prohibition", sans-serif;
+}
+
+.our-story-flex {
+  display: flex;
+}
+
+.coffee-beans-hands {
+  background-image: url("coffee-beans-hands.jpg");
+  background-size: cover;
+  height: fit-content;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+
 

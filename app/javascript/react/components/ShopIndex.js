@@ -4,7 +4,7 @@ const ShopIndex = (props) => {
 
   return (
     <div>
-
+      <h2>Our Shop, component made from React</h2>
     </div>
   )
 }

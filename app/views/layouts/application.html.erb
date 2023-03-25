@@ -23,11 +23,11 @@
 
     <div class="home-nav">
       <ul class="flex-1">
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">COFFEE</a></li>
-        <li><a href="#">MERCH</a></li>
-        <li><a href="#">LOCATIONS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/coffee">COFFEE</a></li>
+        <li><a href="/store">MERCH</a></li>
+        <li><a href="/locations">LOCATIONS</a></li>
+        <li><a href="/contact">CONTACT</a></li>
       </ul>
     </div>
 
@@ -35,7 +35,7 @@
         <%- if current_user -%>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
-        <li><%= link_to 'Account', new_user_session_path%>
+        <li><%= link_to 'Account', new_user_session_path%></li>
         <%- end -%>
       </ul>
     </div>
@@ -63,16 +63,16 @@
       <div class="footer-flex">
         <div class="footer-logo">Bluebonnet <br> Coffee</div>
             <ul class="footer-column-1-list font-size-24px">
-              <li>HOME</li>
-              <li>OUR STORY</li>
-              <li>STORE</li>
-              <li>LOCATIONS</li>
+              <li><a href="/">HOME</a></li>
+              <li><a href="/about">OUR STORY</a></li>
+              <li><a href="/store">STORE</a></li>
+              <li><a href="/locations">LOCATIONS</a></li>
             </ul>
 
             <ul class="footer-column-2-list font-size-24px">
-              <li>ACCOUNT</li>
-              <li>CONTACT</li>
-              <li>FAQ'S</li>
+              <li><%= link_to 'Account', new_user_session_path%></li>
+              <li><a href="/contact">CONTACT</a></li>
+              <li><a href="/questions">FAQ'S</a></li>
             </ul>
 
           <div class="footer-newsletter-flex">
