@@ -8,8 +8,10 @@
   <%= favicon_link_tag asset_path('coffee-icon.png') %>
 </head>
 <body>
-  <div class="top-banner text-white">
-    ORDERS $50+ SHIP FREE | SHOP NOW 
+  <div class="top-banner-background-gradient">
+    <div class="top-banner">
+      ORDERS $50+ SHIP FREE | SHOP NOW 
+    </div>
   </div>
 
 <div class="top-bar-container">
@@ -44,13 +46,6 @@
       <%= value %>
     </div>
   <%- end -%>
-
-  <div class="top-banner-section">
-  <div class="top-image-text text-white">COFFEE BREWED <br>BY TEXANS</div>
-  <div class="button">Our Story</div>
-  </div>
-
-
 
   <%= yield %>
 

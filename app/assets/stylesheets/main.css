@@ -15,9 +15,11 @@ body {
   font-family: "prohibition", sans-serif;
 }
 
+.top-banner-background-gradient {
+  background: linear-gradient( to right, red, rgba(255, 0, 0, 0.879), rgba(255, 0, 0, 0.634), rgba(255, 0, 0, 0.543), rgba(255, 0, 0, 0.454), rgba(255, 0, 0, 0.301), rgba(255, 0, 0, 0.204), rgba(0, 0, 255, 0.194), rgba(0, 0, 255, 0.33), rgba(0, 0, 255, 0.448), rgba(0, 0, 255, 0.58), rgba(0, 0, 255, 0.75), rgba(0, 0, 255, 0.892), blue);
+}
 .top-banner {
   text-align: center;
-  background-color: #523964;
   padding: 0.625em;
 }
 
@@ -33,10 +35,6 @@ body {
   padding: 0 1em;
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
-}
-
-.top-bar-container:hover {
-  background-color: #99b3d4;
 }
 
 .top-bar-flex{
@@ -80,7 +78,7 @@ body {
   content: "";
   width: 0;
   height: 5px;
-  background-color: #0b2a8f;
+  background-color: rgb(83, 102, 172);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -105,8 +103,8 @@ body {
 .top-banner-section {
   background-image: url("home-texans.jpg");
   background-size: cover;
-  padding-top: 115px;
-  padding-bottom: 200px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   text-align: center;
 }
 
@@ -121,6 +119,7 @@ body {
   padding: .85em 2em;
   margin-top: 1rem;
 }
+
 
 /* HOME - COFFEE */
 .coffee-banner-section {
