@@ -16,7 +16,7 @@ body {
 }
 
 .top-banner {
-  background-color: rgb(193, 157, 103);
+  background-color: rgb(255, 0, 0);
   text-align: center;
   padding: 0.625em;
 }
@@ -118,6 +118,11 @@ body {
   margin-top: 1rem;
 }
 
+.button:hover {
+  background-color: transparent;
+  border: 2px solid red;
+}
+
 
 /* HOME - COFFEE */
 .coffee-banner-section {
@@ -161,6 +166,15 @@ body {
   color: white;
   padding: 0.85em 2em;
   display: inline-block;
+}
+
+.home-our-coffees-button a {
+  color: white;
+}
+
+.home-our-coffees-button:hover {
+  border: none;
+  background-color:  red;
 }
 
 /* HOME - MENU */
@@ -329,20 +343,28 @@ body {
 }
 
 /* ABOUT PAGE */
+.about-top-image {
+  background-image: url("bluebonnet-flowers.jpg");
+  background-size: cover;
+  height: 200px;
+}
+.about-container {
+  padding-left: 55px;
+  padding-right: 55px;
+  text-align: center;
+}
+
 .font-prohibition h2 {
   font-family: "prohibition", sans-serif;
 }
 
-.our-story-flex {
-  display: flex;
+.font-prohibition h4 {
+  font-family: "prohibition", sans-serif;
+  font-style: italic;
 }
 
-.coffee-beans-hands {
-  background-image: url("coffee-beans-hands.jpg");
-  background-size: cover;
-  height: fit-content;
-  text-align: center;
-  background-repeat: no-repeat;
+.our-story-flex {
+  display: flex;
 }
 
 
