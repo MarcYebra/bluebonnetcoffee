@@ -16,7 +16,7 @@ body {
 }
 
 .top-banner {
-  background-color: rgb(255, 0, 0);
+  background-color: #ce8a66;
   text-align: center;
   padding: 0.625em;
 }
@@ -111,18 +111,21 @@ body {
   text-align: center;
 }
 
-.button {
+.story-button {
+  margin-top: 15px;
+}
+
+.story-button a{
   background-color: #385C8B;
+  color: white;
   font-size: 1.350em;
-  padding: .85em 2em;
-  margin-top: 1rem;
+  padding: 0.85em 2em;
 }
 
-.button:hover {
-  background-color: transparent;
-  border: 2px solid red;
+.story-button
+a:hover {
+  background-color: red;
 }
-
 
 /* HOME - COFFEE */
 .coffee-banner-section {
@@ -201,12 +204,13 @@ body {
 .menu-text {
   display: block;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .menu-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .see-menu-button {
@@ -233,7 +237,7 @@ body {
 .home-shop-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .home-shop-container {
@@ -365,6 +369,14 @@ body {
 
 .our-story-flex {
   display: flex;
+}
+
+.texas-grown-company {
+  background-image: url("Texas-Grown-Company.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: center;
 }
 
 

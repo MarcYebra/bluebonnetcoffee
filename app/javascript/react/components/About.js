@@ -14,7 +14,7 @@ const About = (props) => {
               is that everyone be treated with the same level of respect and kindness. Our goal is for every customer to leave
               satisfied and inspired to face the world head on!
             </p>
-
+          <div className="texas-grown-company"></div>
           <h2>Why Bluebonnet Coffee?</h2>
             <p>Being a Texan isn’t about throwing on cowboy boots and saying “yee-haw,” it’s a way of life. Just like bluebonnets, 
               Texans are vibrant, work best in heat, and hard to ignore because of how darn beautiful we are! <br></br>
