@@ -1,10 +1,16 @@
 import React from 'react';
 
+import GeorgetownLocation from './GeorgetownLocation';
+import CedarParkLocation from './CedarParkLocation';
+import AustinLocation from './AustinLocation';
+
 const LocationIndex = (props) => {
 
   return (
     <div>
-      <h2>Our Locations, made by React component</h2>
+      <GeorgetownLocation />
+      <CedarParkLocation />
+      <AustinLocation />
     </div>
   )
 }

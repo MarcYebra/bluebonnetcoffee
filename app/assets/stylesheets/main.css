@@ -16,7 +16,7 @@ body {
 }
 
 .top-banner {
-  background-color: #ce8a66;
+  background-color: #00314D;
   text-align: center;
   padding: 0.625em;
 }
@@ -379,5 +379,28 @@ a:hover {
   background-position: center;
 }
 
+/* Georgetown Location Component  */
+.georgetown-location-photo {
+  background-image: url("georgetown.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+/* Cedar Park Location Component  */
+.cedarpark-location-photo {
+  background-image: url("cedar-park.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+/* Austin Location Component  */
+.austin-location-photo {
+  background-image: url("austin.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+}
 
 
